@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AddressCardComponent implements OnInit {
 
   user: any;
+  
   @Input('name') username: string;
 
   constructor() { 
@@ -25,5 +26,4 @@ export class AddressCardComponent implements OnInit {
       ]
     }
   }
-
 }
