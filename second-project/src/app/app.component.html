@@ -1,3 +1,6 @@
 <app-address-card [user]="user"></app-address-card>
 <h2>{{inputText}}</h2>
-<input type="text" [(ngModel)]="inputText"/>
+<form>
+    <input type="text" [(ngModel)]="inputText"/>
+    <button (click)="addTodo()">Add Todo</button>
+</form>
