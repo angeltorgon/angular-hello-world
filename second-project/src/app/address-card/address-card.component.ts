@@ -8,20 +8,12 @@ import { User } from './user.model';
 })
 export class AddressCardComponent implements OnInit {
 
-  user: any;
-
-  @Input('name') userObj: User;
+  @Input('user') user: User;
 
   constructor() { 
   }
   
   ngOnInit() {
-    this.user =
-    {
-      name: this.userObj.name,
-      designation: this.userObj.designation,
-      address: this.userObj.address,
-      phone: this.userObj.phone
-    }
+    console.log(this.userObj)
   }
 }
