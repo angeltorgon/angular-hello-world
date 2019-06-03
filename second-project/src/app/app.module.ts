@@ -5,13 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddressCardComponent } from './address-card/address-card.component';
-import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddressCardComponent,
-    TodoComponent
   ],
   imports: [
     BrowserModule,
