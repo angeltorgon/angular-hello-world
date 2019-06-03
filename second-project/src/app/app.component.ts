@@ -10,6 +10,8 @@ export class AppComponent {
 
   user: User;
 
+  inputText: string = 'Initial Value'
+
   constructor(){
     this.user = new User();
     this.user.name = "Angel Torres"
