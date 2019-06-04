@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TestService } from './test.service';
 import { HttpClient } from '@angular/common/http';
+import { Character } from './view/view-component/character.model';
 
 @Component({
   selector: 'app-root',

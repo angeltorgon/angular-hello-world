@@ -16,7 +16,6 @@ export class ViewComponentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.character = new Character();
   }
 
 }
