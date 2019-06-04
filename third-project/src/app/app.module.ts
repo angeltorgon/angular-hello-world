@@ -13,9 +13,7 @@ import { TestService } from './test.service';
     BrowserModule,
     ViewModule
   ],
-  providers: [
-    TestService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
