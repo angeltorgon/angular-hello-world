@@ -8,9 +8,19 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  character: any;
+
   constructor(private svc: TestService, private http: HttpClient) {
-    svc.log('Service injection worked!')
+    
+  }
+
+  ngOnInit() {
     const observable = this.http.get("https://rickandmortyapi.com/api/character/14");
-    observable.subscribe( res => console.log(res));
+    observable.subscribe( (res) => {
+      this.character = res;
+      console.log(this.character)
+    });
+    
   }
 }
